@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Manasa Murakonda Institute of Technology(Autonomous)<br>
+        II B.Tech I Semester (R23) Regular Examinations, January 2025 Results</h1><br><br>
+    <form action="{% url 'data' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="rollno" placeholder="Enter your rollno here">
+        <button type="submit">submit</button>
+    </form><br><br>
+    <h3>Note: Last date for Recounting/Revaluation/Challenge by Revaluation is 17-02-2025</h3>
+    <h4>Important!! The data provided on this site is purely for informational purpose.</h4>
+    <h3>Note: *CP-Completed *NCP-Not Completed</h3>
+
+</body>
+</html>

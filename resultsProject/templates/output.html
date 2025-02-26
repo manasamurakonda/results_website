@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Manasa Murakonda Institute of Technology(Autonomous)<br>
+        II B.Tech I Semester (R23) Regular Examinations, January 2025 Results</h1><br>
+    <pre><b>HallTicket No</b>            {{student.roll_number}}</pre>
+    <pre><b>Name</b>             {{student.name}}</pre>
+    <br>
+    <table>
+        <tr>
+            <th>Subject Code</th>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Credits</th>
+        </tr>
+        <tr>
+            <td>23SH3T04</td>
+            <td>PROBABILITY AND STATISTICS</td>
+            <td>{{student.maths}}</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23SH3T06</td>
+            <td>UNIVERSAL HUMAN VALUES UNDERSTANDING HARMONY AND ETHICAL HUMAN CONDUCT</td>
+            <td>{{student.uhv}}</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23CM3T01</td>
+            <td>ARTIFICIAL INTELLIGENCE</td>
+            <td>{{student.ai}}</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23CS3T01</td>
+            <td>ADVANCED DATA STRUCTURES AND ALGORITHM ANALYSIS</td>
+            <td>{{student.ads}}</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23CS3T02</td>
+            <td>OBJECT ORIENTED PROGRAMMING THROUGH JAVA</td>
+            <td>{{student.oop}}</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23CM3L01</td>
+            <td>ADVANCED DATA STRUCTURES AND ALGORITHM ANALYSIS LAB</td>
+            <td>{{student.adlab}}</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>23CM3L02</td>
+            <td>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB</td>
+            <td>{{student.ooplab}}</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>23CM3S01</td>
+            <td>PYTHON PROGRAMMING</td>
+            <td>{{student.python}}</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>23CM3N01</td>
+            <td>LIFE SKILLS III</td>
+            <td>{{student.lifeskills}}</td>
+        </tr>
+    </table><br>
+    <pre><b>Pass/Fail</b>            {{student.res}}</pre>
+    <pre><b>SGPA</b>                {{student.sgpa}}</pre><br>
+    <h3>Note: Last date for Recounting/Revaluation/Challenge by Revaluation is 17-02-2025</h3>
+    <h4>Important!! The data provided on this site is purely for informational purpose.</h4>
+    <h3>Note: *CP-Completed *NCP-Not Completed</h3>
+</body>
+</html>
