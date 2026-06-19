@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure--d&o^^)4#q8yu9f=-n=lb#fwxbxo-d41^$fi#e72%1jb&ym@(j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'manasas-results-website.onrender.com',
+]
 
 
 # Application definition
